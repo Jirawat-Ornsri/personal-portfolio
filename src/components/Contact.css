@@ -1,0 +1,89 @@
+.section-contact-con {
+    margin-top: 190px;
+    text-align: center;
+}
+.section-contact-con h1 {
+    margin-bottom: 1rem;
+    font-size: 32px;
+}
+.section-contact-con p {
+    color: gray;
+    font-size: 20px;
+}
+
+.section-contact-con .contact-items-con {
+    background-color: white;
+    display: flex;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+.section-contact-con .contact-items-con .img-con {
+    width: 60%;
+}
+.section-contact-con .contact-items-con .img-con img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.section-contact-con .contact-items-con form {
+    width: 40%;
+    text-align: start;
+    padding: 2rem;
+}
+.section-contact-con .contact-items-con form h2 {
+    color: black;
+    margin-bottom: 1rem;
+}
+.section-contact-con .contact-items-con form label {
+    color: black;
+    font-size: 12px;
+}
+.section-contact-con .contact-items-con form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    color: gray;
+    border: none;
+    outline: none;
+    background-color: rgb(241, 241, 241);
+}
+.section-contact-con .contact-items-con form input[type="submit"] {
+    background-color: rgb(56, 0, 141);
+    color: white;
+}
+.section-contact-con .contact-items-con form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    color: gray;
+    resize: none;
+    outline: none;
+}
+
+/* สร้าง animation สำหรับ Popup */
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #27b733;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s forwards;
+  }

@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Project() {
   return (
-    <div className="section-project-con">
+    <div className="section-project-con" id='project'>
       <h1>Projects</h1>
       <p>Thing I've built so far</p>
       <div className="project-items-grid">

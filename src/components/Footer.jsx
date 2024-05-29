@@ -22,17 +22,17 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <hr color='gray' />
+            <hr color='gray'/>
             <div className="menu-con">
                 <ul className="menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Tech Stack</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#techskill">Tech Stack</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className="menu-icon">
-                    <FaCode />
-                    <MdOutlineDesktopMac />
+                    <FaCode size={28} fill='gray'/>
+                    <MdOutlineDesktopMac size={28} fill='gray'/>
                 </div>
             </div>
         </div>

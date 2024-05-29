@@ -36,7 +36,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="section-contact-con">
+    <div className="section-contact-con" id='contact'>
       <h1>Contact</h1>
       <p>send message to email</p>
       <div className="contact-items-con">

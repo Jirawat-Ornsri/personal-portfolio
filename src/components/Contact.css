@@ -53,7 +53,7 @@
     background-color: rgb(241, 241, 241);
 }
 .section-contact-con .contact-items-con form input[type="submit"] {
-    background-color: rgb(56, 0, 141);
+    background-color: rgb(4, 0, 44);
     color: white;
 }
 .section-contact-con .contact-items-con form textarea {
@@ -66,6 +66,60 @@
     resize: none;
     outline: none;
 }
+
+/* mobile screen */
+@media (max-width: 480px) {
+    .section-contact-con {
+       
+    }
+    .section-contact-con h1 {
+        font-size: 1.5rem;
+    }
+    .section-contact-con p {
+        font-size: 1rem;
+    }
+    
+    .section-contact-con .contact-items-con {
+        justify-content: center;
+    }
+    .section-contact-con .contact-items-con .img-con {
+        display: none;
+    }
+    
+    .section-contact-con .contact-items-con form {
+        width: 100%;
+    }
+}
+
+/* tablets screen */
+@media (max-width: 768px) {}
+
+/* laptops screen */
+@media (max-width: 1024px) {
+    .section-contact-con {
+       
+    }
+    .section-contact-con h1 {
+        font-size: 1.5rem;
+    }
+    .section-contact-con p {
+        font-size: 1rem;
+    }
+    
+    .section-contact-con .contact-items-con {
+        justify-content: center;
+    }
+    .section-contact-con .contact-items-con .img-con {
+        display: none;
+    }
+    
+    .section-contact-con .contact-items-con form {
+        width: 100%;
+    }
+}
+
+/* large screen */
+@media (max-width: 1200px) {}
 
 /* สร้าง animation สำหรับ Popup */
 @keyframes slideIn {
@@ -87,3 +141,5 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     animation: slideIn 0.5s forwards;
   }
+
+

@@ -13,31 +13,35 @@
 }
 
 html {
+  scroll-behavior: smooth;
   background-color: rgb(17, 7, 31);
 }
 
 .App-con {
-  max-width: 1193px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 /* --- part section about start ---- */
 .section-about-con {
   /* border: 1px solid red; */
-  height: 300px;
   margin-top: 215px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
 }
 
 .section-about-con .about-info {
   /* border: 1px solid red; */
 }
+
 .section-about-con .about-info h1 {
-  font-size: 40px;
+  font-size: 3rem;
 }
-.section-about-con .about-info h1 .name{
+
+.section-about-con .about-info h1 .name {
+  font-size: 5rem;
   background: linear-gradient(to right, #5076d7 0%, #f82e2e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,10 +50,13 @@ html {
 .section-about-con .about-profile {
   height: 100%;
 }
+
 .section-about-con .about-profile .profile {
+  z-index: 0;
   height: 100%;
   filter: drop-shadow(-4px 5px 50px #7429ff);
 }
+
 /* --- part section about end ---- */
 
 /* --- part section tech start ---- */
@@ -58,23 +65,139 @@ html {
   /* border: 1px solid red; */
   text-align: center;
 }
+
 .section-tech-con h1 {
   font-size: 32px;
   margin-bottom: 1rem;
 }
+
 .section-tech-con p {
   font-size: 20px;
   color: gray;
 }
 
 .section-tech-con .tech-items-grid {
-  margin-top: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   column-gap: 130px;
   row-gap: 70px;
 }
+
 .section-tech-con .tech-items-grid img {
   width: 100%;
+  transition: .5s;
 }
+
+.section-tech-con .tech-items-grid:hover img:not(:hover) {
+  filter: blur(8px);
+}
+
 /* --- part section tech end ---- */
+
+/* ******* responsive *********** */
+/* mobile screen */
+@media (max-width: 480px) {
+  /* --- part section about start ---- */
+  .section-about-con {
+    margin-top: 40px;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .section-about-con .about-info h1 {
+    font-size: 1rem;
+  }
+
+  .section-about-con .about-info {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-about-con .about-info h1 {
+    font-size: 2rem;
+  }
+
+  .section-about-con .about-info h1 .name {
+    font-size: 2.5rem;
+  }
+
+  .section-about-con .about-profile {
+    margin-top: 80px;
+    /* border: 1px solid red; */
+  }
+
+  /* --- part section about end ---- */
+
+  /* --- part section tech start ---- */
+  .section-tech-con {
+    margin-top: 150px;
+  }
+
+  .section-tech-con h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-tech-con p {
+    font-size: 1rem;
+  }
+  /* --- part section tech end ---- */
+}
+
+/* tablets screen */
+@media (max-width: 768px) {
+  
+}
+
+/* laptops screen */
+@media (max-width: 1024px) {
+   /* --- part section about start ---- */
+   .section-about-con {
+    margin-top: 40px;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .section-about-con .about-info h1 {
+    font-size: 1rem;
+  }
+
+  .section-about-con .about-info {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-about-con .about-info h1 {
+    font-size: 2rem;
+  }
+
+  .section-about-con .about-info h1 .name {
+    font-size: 2.5rem;
+  }
+
+  .section-about-con .about-profile {
+    margin-top: 80px;
+    /* border: 1px solid red; */
+  }
+
+  /* --- part section about end ---- */
+
+  /* --- part section tech start ---- */
+  .section-tech-con {
+    margin-top: 150px;
+  }
+
+  .section-tech-con h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-tech-con p {
+    font-size: 1rem;
+  }
+  /* --- part section tech end ---- */
+}
+
+/* large screen */
+@media (max-width: 1200px) {}
+

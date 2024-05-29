@@ -1,0 +1,11 @@
+
+.tech-logo-slide-con .slider-logo-img {
+    width: 100px;
+}
+
+@media (max-width: 599px) {
+    .tech-logo-slide-con {
+        margin-top: 80px;
+    }
+}
+

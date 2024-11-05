@@ -8,8 +8,8 @@ const projects = [
     github: "https://github.com/Jirawat-Ornsri/Final"
   },
   {
-    img: "images/space-store.png",
-    video: "",
+    img: "images/mobile-pj.png",
+    video: "https://www.youtube.com/watch?v=J6HFBjo9o4U",
     title: "Project Mobile app",
     txt: "Water tracking app ติดตามการดื่มน้ำในแต่ละวันของ user มีระบบ login และ บอกปริมาณน้ำที่ต้องดื่มในแต่ละวัน พร้อมบอกว่าวันนี้ดื่มน้ำไปกี่ลิตร",
     tech: "Flutter, Dart, Firebase",

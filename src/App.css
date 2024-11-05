@@ -113,9 +113,7 @@ html {
   gap: 45px;
 }
 
-.section-project-con .project-items-grid:hover .pj-item-con:not(:hover) {
-  filter: blur(8px);
-}
+
 
 /* --- part section project end ---- */
 

@@ -15,7 +15,7 @@ export default function Project(props) {
         <div className="pj-link-con">
           <div className="pj-link-item">
             <MdVideoLibrary fill='black' />
-            <a href="">Video Preview</a>
+            <a href={project.video}>Video Preview</a>
           </div>
           <div className="pj-link-item">
             <FaGithub fill='black' />

@@ -88,10 +88,6 @@ html {
   transition: .5s;
 }
 
-.section-tech-con .tech-items-grid:hover img:not(:hover) {
-  filter: blur(8px);
-}
-
 /* --- part section tech end ---- */
 
 /* --- part section project start ---- */

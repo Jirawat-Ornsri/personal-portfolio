@@ -7,8 +7,14 @@ import Footer from './components/Footer'
 import { TypeAnimation } from 'react-type-animation';
 import TextShpere from './animation/TextSphere'
 import TechSlide from './components/TechSlide'
+import projects from './data/projects'
+
 
 function App() {
+  // get projects elements
+  const projectElements = projects.map((pj, index) => {
+    return <Project key={index} project={pj} />;
+  })
 
   return (
     <>
@@ -44,13 +50,22 @@ function App() {
           <h1>My Tech Stack</h1>
           <p>Technologies I've been working qith recently</p>
           <TextShpere />
-          <TechSlide/>
+          <TechSlide />
         </div>
 
-        <Project />
+        {/* section projects */}
+        <div className="section-project-con" id='project'>
+          <h1>Projects</h1>
+          <p>Thing I've built so far</p>
+          <div className="project-items-grid">
+            {/* display projects */}
+            {projectElements}
+          </div>
+        </div>
         <Contact />
-        <Footer />
+
       </div>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,12 @@
 .section-footer-con {
-    margin-top: 195px
+    margin-top: 195px;
+    padding: 5rem 0;
+    background-color: rgb(13, 5, 24);
+}
+
+.section-footer-con .footer-margin {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .section-footer-con .footer-info-con {
@@ -24,7 +31,7 @@
     justify-content: space-between;
 }
 .footer-info-con  .footer-contact .email {
-    color: gray;
+    color: rgb(221, 221, 221);
     font-size: 18px;
     width: 70%;
 }
@@ -39,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 0 4rem 0;
+    margin: 1.5rem 0 0 0;
 }
 .section-footer-con .menu-con .menu {
 
@@ -50,7 +57,7 @@
     align-items: center;
 }
 .section-footer-con .menu a{
-    color: gray;
+    color: rgb(221, 221, 221);
     text-decoration: none;
     font-size: 16px;
 }
@@ -66,57 +73,13 @@
 
 /* mobile screen */
 @media (max-width: 480px) {
-    .section-footer-con {
-        margin-top: 100px
-    }
 
-    .section-footer-con .footer-info-con {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-    .footer-info-con .logo {
-        text-align: center;
-    }
-    .footer-info-con .logo h1 {
-       font-size: 24px;
-    }
-    
-    .footer-info-con  .footer-contact {   
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-info-con  .footer-contact .email {
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-    .footer-info-con  .footer-contact .social {
-        width: 50%;
-    }
-    
-    .section-footer-con .menu-con {
-        flex-direction: column;
-       
-    }
-    .section-footer-con .menu-con .menu {
-        width: 100%;
-        margin-bottom: 24px;
-    }
-    .section-footer-con .menu a{
-        font-size: 12px;
-    }
-    
-    
-    .section-footer-con .menu-con .menu-icon {
-        width: 30%;
-    }
 }
 
 /* tablets screen */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+ 
+}
 
 /* laptops screen */
 @media (max-width: 1024px) {

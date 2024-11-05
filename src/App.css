@@ -94,9 +94,39 @@ html {
 
 /* --- part section tech end ---- */
 
+/* --- part section project start ---- */
+.section-project-con {
+  margin-top: 190px;
+  text-align: center;
+}
+
+.section-project-con h1 {
+  margin-bottom: 1rem;
+  font-size: 32px;
+}
+
+.section-project-con p {
+  color: gray;
+  font-size: 20px;
+}
+
+.section-project-con .project-items-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 45px;
+}
+
+.section-project-con .project-items-grid:hover .pj-item-con:not(:hover) {
+  filter: blur(8px);
+}
+
+/* --- part section project end ---- */
+
 /* ******* responsive *********** */
 /* mobile screen */
 @media (max-width: 480px) {
+
   /* --- part section about start ---- */
   .section-about-con {
     margin-top: 40px;
@@ -141,18 +171,18 @@ html {
   .section-tech-con p {
     font-size: 1rem;
   }
+
   /* --- part section tech end ---- */
 }
 
 /* tablets screen */
-@media (max-width: 768px) {
-  
-}
+@media (max-width: 768px) {}
 
 /* laptops screen */
 @media (max-width: 1024px) {
-   /* --- part section about start ---- */
-   .section-about-con {
+
+  /* --- part section about start ---- */
+  .section-about-con {
     margin-top: 40px;
     flex-direction: column;
     /* border: 1px solid red; */
@@ -195,9 +225,23 @@ html {
   .section-tech-con p {
     font-size: 1rem;
   }
+
   /* --- part section tech end ---- */
+
+  /* --- part section project start ---- */
+  .section-project-con {
+    margin-top: 190px;
+  }
+
+  .section-project-con h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-project-con p {
+    font-size: 1rem;
+  }
+  /* --- part section project end ---- */
 }
 
 /* large screen */
 @media (max-width: 1200px) {}
-

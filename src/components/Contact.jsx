@@ -38,7 +38,7 @@ export const Contact = () => {
   return (
     <div className="section-contact-con" id='contact'>
       <h1>Contact</h1>
-      <p>send message to email</p>
+      <p>Send message to email</p>
       <div className="contact-items-con">
         <div className="img-con">
           <img src={contact_img} alt="" />
@@ -51,7 +51,7 @@ export const Contact = () => {
           <input type="email" name="from_email" required placeholder='input your email'/><br />
           <label>Message</label><br />
           <textarea name="message" required placeholder='typing message...'/><br />
-          <input type="submit" value="Send" required />
+          <input type="submit" value="Submit" required />
         </form>
       </div>
     </div>

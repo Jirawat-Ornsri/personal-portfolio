@@ -86,7 +86,7 @@
 /* hover effect */
 
 /* Responsive styles */
-@media (max-width: 821px) {
+@media (max-width: 1199px) {
     .nav-margin {
         max-width: 80%;
     }

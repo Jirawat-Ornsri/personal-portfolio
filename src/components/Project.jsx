@@ -13,11 +13,11 @@ export default function Project(props) {
         <p>{project.txt}</p>
         <div className="tech-stack">Tech stack: {project.tech}</div>
         <div className="pj-link-con">
-          <div className="pj-link-item">
+          <div className="pj-link-item" style={{display:project.video === "" ? 'none' : 'block'}}>
             <MdVideoLibrary fill='black' />
             <a href={project.video}>Video Preview</a>
           </div>
-          <div className="pj-link-item">
+          <div className="pj-link-item" style={{display:project.github === "" ? 'none' : 'block'}}>
             <FaGithub fill='black' />
             <a href={project.github}>View Code</a>
           </div>

@@ -12,6 +12,7 @@
 }
 
 .project-items-grid .pj-item-con .pj-item-info {
+    height: 50%;
     padding: 1rem 1.5rem;
     text-align: start;
 }

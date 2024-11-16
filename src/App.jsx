@@ -49,7 +49,7 @@ function App() {
         <div className="section-tech-con" id='techskill'>
           <h1>My Tech Stack</h1>
           <p>Technologies I've been working qith recently</p>
-          <TextShpere />
+          {/* <TextShpere /> */}
           <TechSlide />
         </div>
 

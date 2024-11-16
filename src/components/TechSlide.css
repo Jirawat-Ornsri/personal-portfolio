@@ -3,9 +3,9 @@
     width: 100px;
 }
 
-@media (max-width: 599px) {
-    .tech-logo-slide-con {
-        margin-top: 80px;
-    }
+
+.tech-logo-slide-con {
+    margin-top: 70px;
 }
+
 

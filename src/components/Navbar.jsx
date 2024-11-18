@@ -22,6 +22,20 @@ export default function Navbar() {
         };
     }, []);
 
+     // เมื่อ menu เปิด หรือ ปิด ให้ปรับ overflow ของ body
+     useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden'; // ปิด scroll
+        } else {
+            document.body.style.overflow = ''; // คืนค่า overflow เป็นปกติ
+        }
+
+        // การ cleanup เพื่อให้แน่ใจว่า body กลับมาปกติเมื่อ component unmount
+        return () => {
+            document.body.style.overflow = ''; // คืนค่า overflow เมื่อเมนูปิด
+        };
+    }, [menuOpen]); // การทำงานนี้จะเกิดขึ้นเมื่อ `menuOpen` เปลี่ยนค่า
+
     return (
         <>
             <div className="nav-con">

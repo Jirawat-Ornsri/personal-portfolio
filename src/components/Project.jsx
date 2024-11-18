@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Project.css';
 import { MdVideoLibrary } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
@@ -17,6 +17,19 @@ export default function Project(props) {
     setModalOpen(false);
     setTimeout(() => setModalImage(null), 300); // Delay ให้ animation ปิดเสร็จ (300ms)
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden'; // ปิดการ scroll ของ body
+    } else {
+      document.body.style.overflow = ''; // คืนค่า overflow ของ body
+    }
+
+    // เมื่อ component ถูก unmount หรือ modal ปิด, คืนค่า overflow ให้เป็นปกติ
+    return () => {
+      document.body.style.overflow = ''; // คืนค่า overflow
+    };
+  }, [isModalOpen]); // การทำงานจะเปลี่ยนทุกครั้งที่ isModalOpen เปลี่ยน
 
   return (
     <div className="pj-item-con">

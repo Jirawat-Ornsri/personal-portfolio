@@ -8,6 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 import TextShpere from './animation/TextSphere'
 import TechSlide from './components/TechSlide'
 import projects from './data/projects'
+import { red } from '@mui/material/colors'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                 repeat={Infinity}
               /> <br />
               I build thing for web</h1>
+              <a href="/Jirawat_Ornsri_Resume.pdf" download>Download Resume</a>
           </div>
           <div className="about-profile">
             <img className='profile' src={profile} alt="" />

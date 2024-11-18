@@ -47,6 +47,21 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.section-about-con .about-info a {
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #5076d7 0%, #5c2999 100%);
+  color: #ffffff;
+  padding: .5rem 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+}
+
 .section-about-con .about-profile {
   height: 100%;
 }

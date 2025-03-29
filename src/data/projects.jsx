@@ -31,6 +31,22 @@ const projects = [
     tech: "Flutter, Dart, Firebase",
     github: "https://github.com/Jirawat-Ornsri/project_mobile"
   },
+  {
+    img: "images/chat-app.png",
+    video: "https://www.youtube.com/watch?v=ntKkVrQqBYY&t=16158s",
+    title: "Realtime Chat App",
+    txt: "ฝึกทำ Realtime Chat App จาก Youtube",
+    tech: "JavaScript, React, MongoDB",
+    github: "https://chat-app-h7jl.onrender.com/"
+  },
+  {
+    img: "images/MERN-lms.png",
+    video: "",
+    title: "LMS MERN Stack",
+    txt: "ระบบจัดการเรียน หรือ Learning management system ผู้ใช้เลือกลงคอร์สเรียนที่สนใจ จากนั้นผู้ใช้เข้าเรียนคอร์สที่ลงทะเบียนไว้และมีระบบติดตามความคืบหน้าของผู้ใช้ว่าเรียนคอร์สนั้นถึงไหนแล้ว และยังมีระบบ community ไว้ให้ผู้ใช้โพสต์ปร๊กษากับผู้ใช้คนอื่นๆ เกี่ยวกับคอร์สเรียนต่างๆ",
+    tech: "JavaScript, React, MongoDB",
+    github: "https://learnly-app.onrender.com/"
+  },
   
 ];
 

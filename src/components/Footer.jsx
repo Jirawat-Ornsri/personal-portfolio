@@ -12,7 +12,7 @@ function Footer() {
             <div className="footer-margin">
                 <div className="footer-info-con">
                     <div className="logo">
-                        <h1>BELOXDEV</h1>
+                        <h1>PORTFOLIO</h1>
                     </div>
                     <div className="footer-contact">
                         <div className="email">jirawat.ornsri@gmail.com</div>

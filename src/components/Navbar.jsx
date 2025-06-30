@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="nav-con">
                 <div className="nav-margin">
                     <div className="nav-items">
-                        <div className="logo">BELOXDEV</div>
+                        <div className="logo">PORTFOLIO</div>
                         <div className="menu-icon" onClick={handleMenuToggle}>
                             &#9776;
                         </div>
